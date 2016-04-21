@@ -1,0 +1,33 @@
+if response = 404 then write to errorlog.txt
+if response = 500 then use twilio to text brian
+else just write to normallogfile.txt
+
+
+supercoolsocialwebsite.com
+
+suprkewl.com
+
+suprkewl.com/profiles/migang
+
+migang.suprkewl.com
+
+if request has a subdomain
+	parse it out (migang)
+		is that in a list of reserved words? www, mail. smtp. pop.
+		if not, has migang paid their subscription fee?
+		if yes,
+		if not, show a giant ugly splash screen telling the world that migang hasnt paid for the premium upgrade
+
+
+
+funnycatpix.com
+
+funnycatpix.com/thereisafire.jpg
+
+funnycatpix.com/thereisafire.jpg?height=96&width=96
+
+do we have a height and width parameter in the query string?
+	was the request handled by the static file handler?
+		if yes, is it returning an image?
+			if yes, run the image through the image resizer before writing it out to the response stream
+
